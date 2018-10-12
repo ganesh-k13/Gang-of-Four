@@ -17,3 +17,4 @@ $(ODIR)/state.o: $(SDIR)/state.cpp $(IDIR)/state.h
 
 clean:
 	rm -r $(ODIR)/*.o
+	rm test
