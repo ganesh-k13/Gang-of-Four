@@ -13,5 +13,5 @@ $(ODIR)/carray.o: $(SDIR)/carray.cpp $(IDIR)/carray.h
 	$(CXX) -c $(SDIR)/carray.cpp -o $(ODIR)/carray.o $(FLAGS)
 
 clean:
-	rm -f $(ODIR)/*.o
-	rm test
+	rm -rf $(ODIR)/*.o ||:
+	rm -rf test ||:

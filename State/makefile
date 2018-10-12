@@ -16,5 +16,5 @@ $(ODIR)/state.o: $(SDIR)/state.cpp $(IDIR)/state.h
 	$(CXX) -c $(SDIR)/state.cpp -o $(ODIR)/state.o $(FLAGS)
 
 clean:
-	rm -r $(ODIR)/*.o
-	rm test
+	rm -rf $(ODIR)/*.o ||:
+	rm -rf test ||:
