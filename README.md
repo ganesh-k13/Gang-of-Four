@@ -1,6 +1,6 @@
 # GANG OF FOUR PATTERNS
 
-![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)  
+[![Build Status](https://travis-ci.org/ganesh-k13/Gang-of-Four.svg?branch=master)](https://travis-ci.org/ganesh-k13/Gang-of-Four) ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)  
 
 This repository contains implementations of GOF Patterns
 
