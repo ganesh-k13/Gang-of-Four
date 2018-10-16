@@ -3,7 +3,8 @@
 #include <vector>
 
 int main() {
-	
+	std::cout << std::endl << "------ Policy Pattern Tests ------" << std::endl;
+
 	Checkout c1(new Cash());
 	Checkout c2(new DebitCard());
 	

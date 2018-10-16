@@ -4,7 +4,7 @@ ODIR=obj
 FLAGS=-std=c++11
 
 test: $(ODIR)/test.o $(ODIR)/mobile.o $(ODIR)/state.o
-	$(CXX) $(ODIR)/test.o $(ODIR)/mobile.o $(ODIR)/state.o -o test $(FLAGS)
+	$(CXX) $(ODIR)/test.o $(ODIR)/mobile.o $(ODIR)/state.o -o test.out $(FLAGS)
 
 $(ODIR)/test.o: test.cpp $(IDIR)/mobile.h $(IDIR)/state.h
 	$(CXX) -c test.cpp -o $(ODIR)/test.o $(FLAGS)
@@ -17,4 +17,4 @@ $(ODIR)/state.o: $(SDIR)/state.cpp $(IDIR)/state.h
 
 clean:
 	rm -rf $(ODIR)/*.o ||:
-	rm -rf test ||:
+	rm -rf test.out ||:

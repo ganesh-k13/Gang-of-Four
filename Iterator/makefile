@@ -4,7 +4,7 @@ ODIR=obj
 FLAGS=-std=c++11
 
 test: $(ODIR)/test.o $(ODIR)/carray.o 
-	$(CXX) $(ODIR)/test.o $(ODIR)/carray.o  -o test $(FLAGS)
+	$(CXX) $(ODIR)/test.o $(ODIR)/carray.o  -o test.out $(FLAGS)
 
 $(ODIR)/test.o: test.cpp $(IDIR)/carray.h $(IDIR)/utils.h
 	$(CXX) -c test.cpp -o $(ODIR)/test.o $(FLAGS)
@@ -14,4 +14,4 @@ $(ODIR)/carray.o: $(SDIR)/carray.cpp $(IDIR)/carray.h
 
 clean:
 	rm -rf $(ODIR)/*.o ||:
-	rm -rf test ||:
+	rm -rf test.out ||:

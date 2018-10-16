@@ -3,6 +3,8 @@
 #include <vector>
 
 int main() {
+	std::cout << std::endl << "------ Iterator Pattern Tests ------" << std::endl;
+
 	CArray<int> arr(10);
 	int i = 0;
 	for(auto it = arr.begin(); it != arr.end(); ++it, ++i) {
