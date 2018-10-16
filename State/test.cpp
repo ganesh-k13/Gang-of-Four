@@ -3,6 +3,8 @@
 #include <vector>
 
 int main() {
+	std::cout << std::endl << "------ State Pattern Tests ------" << std::endl;
+
 	State *silent = new Silent();
 	State *vibration = new Vibration();
 	State *ringing = new Ringing();
