@@ -15,5 +15,5 @@ done
 echo -e "\e[92mexecuting.... \e[0m"
 for d in $(find . -maxdepth 1 -type d -not -path '*/\.*' -not -path '.')
 do
-	$d'/test'
+	$d'/test.out'
 done

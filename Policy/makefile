@@ -4,7 +4,7 @@ ODIR=obj
 FLAGS=-std=c++11
 
 test: $(ODIR)/test.o $(ODIR)/checkout.o $(ODIR)/payment.o
-	$(CXX) $(ODIR)/test.o $(ODIR)/checkout.o $(ODIR)/payment.o -o test $(FLAGS)
+	$(CXX) $(ODIR)/test.o $(ODIR)/checkout.o $(ODIR)/payment.o -o test.out $(FLAGS)
 
 $(ODIR)/test.o: test.cpp $(IDIR)/checkout.h $(IDIR)/payment.h
 	$(CXX) -c test.cpp -o $(ODIR)/test.o $(FLAGS)
@@ -17,4 +17,4 @@ $(ODIR)/payment.o: $(SDIR)/payment.cpp $(IDIR)/payment.h
 
 clean:
 	rm -rf $(ODIR)/*.o ||:
-	rm -rf test ||:
+	rm -rf test.out ||:
