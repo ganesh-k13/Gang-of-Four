@@ -12,10 +12,10 @@ int main() {
 	
 	auto atc = std::make_unique<ATC>();
 
-	atc->addNewRegistered(std::move(bomber1));
-	atc->addNewRegistered(std::move(bomber2));
-	atc->addNewRegistered(std::move(bomber3));
-	atc->addNewRegistered(std::move(bomber4));
+	atc->registerAirline(std::move(bomber1));
+	atc->registerAirline(std::move(bomber2));
+	atc->registerAirline(std::move(bomber3));
+	atc->registerAirline(std::move(bomber4));
 	std::cout << std::endl;
 
 	fighter1->sendMessage(*atc, 40.741895, -73.989308);

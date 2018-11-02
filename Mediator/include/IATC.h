@@ -14,7 +14,7 @@ class IATC
 public:
 	virtual ~IATC() { };
 	virtual void spreadMessage(double, double) = 0;
-	virtual void addNewRegistered(std::unique_ptr<IAirline>) = 0;
+	virtual void registerAirline(std::unique_ptr<IAirline>) = 0;
 	virtual const std::vector<std::unique_ptr<IAirline>> &getVectorOfBombers() const = 0;
 
 protected:

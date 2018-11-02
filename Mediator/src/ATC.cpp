@@ -14,7 +14,7 @@ void ATC::spreadMessage(double latitude, double longitude)  {
 	}
 }
 
-void ATC::addNewRegistered(std::unique_ptr<IAirline> registered) {
+void ATC::registerAirline(std::unique_ptr<IAirline> registered) {
 	_vectorOfBombers.push_back(std::move(registered));
 }
 
